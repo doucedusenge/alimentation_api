@@ -40,6 +40,11 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'alimentation',
+    'rest_framework.authtoken',
+    'rest_framework_simplejwt',
+    'django_filters',
+    'chat',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
@@ -128,3 +133,4 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_ALL_ORIGINS= True
+
