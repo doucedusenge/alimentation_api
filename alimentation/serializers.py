@@ -137,4 +137,11 @@ class DateSerializer(serializers.ModelSerializer):
       # user.save()
      #   user_profile = UserProfile(user=user)
        # user_profile.save()
-       # return user_profile        
+       # return user_profile    
+
+class FacturationSerializer(serializers.ModelSerializer):
+      class Meta:
+        model=Facturation
+        fields="__all__"       
+        
+           

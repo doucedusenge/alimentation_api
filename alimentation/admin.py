@@ -8,5 +8,6 @@ admin.site.register(Commande)
 admin.site.register(Client)
 admin.site.register(Vente)
 admin.site.register(UserProfile)
+admin.site.register(Facturation)
 
 # Register your models here.

@@ -16,6 +16,7 @@ router.register("client",ClientViewSet)
 router.register("vente",VenteViewSet)
 router.register("userprofile",UserProfileViewSet)
 router.register("users",UserViewSet)
+router.register('Facturation',FacturationViewSet)
 
 
 

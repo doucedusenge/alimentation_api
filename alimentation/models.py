@@ -1,3 +1,4 @@
+from unittest.util import _MAX_LENGTH
 from django.db import models
 from django.contrib.auth.models import User
 
@@ -53,6 +54,11 @@ class Client(models.Model):
 class Date(models.Model):
     id=models.AutoField(primary_key=True)
     date=models.DateField(auto_now=False)    
+
+class Facturation(models.Model):
+    id=models.BigAutoField(primary_key=True)
+    nom_produit=models.CharField(max_length=50)
+    prix=models.IntegerField(default=0)    
 
       
     

@@ -215,3 +215,12 @@ class DateViewSet(viewsets.ModelViewSet):
     permission_classes= [AllowAny]
     queryset=Date.objects.all()
     serializer_class=DateSerializer
+
+class FacturationViewSet(viewsets.ModelViewSet):
+    authentication_classes=[SessionAuthentication]
+    permission_classes= [AllowAny]
+    queryset=Facturation.objects.all()
+    serializer_class=FacturationSerializer
+
+
+
